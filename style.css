@@ -8,7 +8,7 @@
     --primary-color :white;
     --item-border-color :rgba(183, 182, 182, 0.768);
     --border-color :red;
-    --item-hover-background-color :black;
+    --black-color :black;
 }
 
 body{
@@ -47,7 +47,7 @@ body{
 }
 
 .gridItem:hover{
-    background-color:var(--item-hover-background-color);
+    background-color:var(--black-color);
 }
 
 
@@ -100,9 +100,33 @@ body{
     cursor: pointer;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-color);
+    font-weight: bolder;
+    position: absolute;
+    bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+a:visited{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width : 500px) {
     .rangeSection{
         width: 100%;
+    }
+
+    footer{
+        bottom: 40px;
     }
 }
