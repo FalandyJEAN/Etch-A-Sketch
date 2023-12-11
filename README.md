@@ -1,4 +1,4 @@
-#Etch-A-Sketch 🎨
+#Etch-A-Sketch 🎨  
 Ce projet Etch-A-Sketch permet à l'utilisateur de dessiner sur un tableau interactif en utilisant HTML, CSS et JavaScript. Découvrez les fonctionnalités intuitives qui rendent l'expérience de dessin amusante et personnalisable.
 
 **Fonctionnalités 🚀**
