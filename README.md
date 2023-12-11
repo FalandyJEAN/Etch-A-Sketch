@@ -1,8 +1,8 @@
 # Etch-A-Sketch 🎨  
 Ce projet Etch-A-Sketch permet à l'utilisateur de dessiner sur un tableau interactif en utilisant HTML, CSS et JavaScript. Découvrez les fonctionnalités intuitives qui rendent l'expérience de dessin amusante et personnalisable.
 
-**Fonctionnalités 🚀**
-Taille du Pinceau Réglable : Utilisez le curseur pour ajuster la taille du pinceau selon vos préférences.
+**Fonctionnalités 🚀**  
+-*Taille du Pinceau Réglable :* Utilisez le curseur pour ajuster la taille du pinceau selon vos préférences.
 
 -*Choix de Couleur 🎨 :* Sélectionnez une couleur via la palette ou utilisez le bouton arc-en-ciel pour des couleurs aléatoires.
 
@@ -19,6 +19,6 @@ Choisissez une couleur en utilisant la palette ou activez le mode arc-en-ciel.
 Commencez à dessiner en survolant les cellules du tableau avec la souris.
 Utilisez le bouton "Effaceur" pour effacer des parties spécifiques ou "Effacer Tout" pour recommencer.
 
-**Auteur 🖋️**
-Falandy Jean
+**Auteur 🖋️**  
+Falandy Jean  
 falandyjean@gmail.com
