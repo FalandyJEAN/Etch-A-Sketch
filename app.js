@@ -21,14 +21,14 @@ sizeRange.addEventListener("input", () => {
 })
 
 function createGrid() {
-    container.innerHTML = '';
+    container.innerHTML = ""
 
     for (let i = 0; i < size * size; i++) {
-        const item = document.createElement("div");
-        item.classList.add("gridItem");
-        container.appendChild(item);
+        const item = document.createElement("div")
+        item.classList.add("gridItem")
+        container.appendChild(item)
 
-        addBlackColor(item);
+        addBlackColor(item)
     }
 }
 
@@ -39,7 +39,6 @@ function addBlackColor(item) {
     }
 
     item.addEventListener("mouseover", applyColor)
-    item.addEventListener("touchstart", applyColor)
     item.addEventListener("touchmove", applyColor)
 }
 
@@ -54,7 +53,6 @@ colorPicker.addEventListener("input", (e) => {
         }
 
         item.addEventListener("mouseover", applyColor)
-        item.addEventListener("touchstart", applyColor)
         item.addEventListener("touchmove", applyColor)
     })
 })
@@ -80,7 +78,6 @@ function applyRandomColor(item){
     }
 
     item.addEventListener("mouseover", applyColor)
-    item.addEventListener("touchstart", applyColor)
     item.addEventListener("touchmove", applyColor)
 }
 
@@ -99,7 +96,6 @@ function removeColor(item){
     }
 
     item.addEventListener("mouseover", applyColor)
-    item.addEventListener("touchstart", applyColor)
     item.addEventListener("touchmove", applyColor)
 }
 

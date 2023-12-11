@@ -1,56 +1,53 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-color :white;
-    --item-border-color :rgba(183, 182, 182, 0.768);
-    --border-color :red;
-    --black-color :black;
+:root {
+    --primary-color: white;
+    --item-border-color: rgba(183, 182, 182, 0.768);
+    --border-color: red;
+    --black-color: black;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: linear-gradient(black,gray);
+    background-image: linear-gradient(black, gray);
 }
 
-.header{
+.header {
     color: var(--border-color);
     font-weight: bold;
     font-style: oblique;
-    font-family:fantasy;
+    font-family: fantasy;
     margin-bottom: 30px;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     max-width: 500px;
     border-radius: 10px;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border: 10px solid var(--border-color);
 }
 
-.gridItem{
+.gridItem {
     flex: 1 0 calc((100% / var(--grid-size)));
     height: 0;
     padding-bottom: calc((100% / var(--grid-size)));
     transition: background-color 0.3s ease;
-    /*border: 0.1px solid var(--item-border-color);*/
 }
 
-.gridItem:hover{
-    background-color:var(--black-color);
+.gridItem:hover {
+    background-color: var(--black-color);
 }
-
-
 
 /*settings*/
 .settings{
