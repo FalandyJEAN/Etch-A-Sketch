@@ -39,7 +39,7 @@ function addBlackColor(item) {
     }
 
     item.addEventListener("mouseover", applyColor)
-    item.addEventListener("touchmove", applyColor)
+    item.addEventListener("touchstart", applyColor)
 }
 
 colorPicker.addEventListener("input", (e) => {
@@ -53,7 +53,7 @@ colorPicker.addEventListener("input", (e) => {
         }
 
         item.addEventListener("mouseover", applyColor)
-        item.addEventListener("touchmove", applyColor)
+        item.addEventListener("touchstart", applyColor)
     })
 })
 
@@ -78,7 +78,7 @@ function applyRandomColor(item){
     }
 
     item.addEventListener("mouseover", applyColor)
-    item.addEventListener("touchmove", applyColor)
+    item.addEventListener("touchstart", applyColor)
 }
 
 rainbowBtn.addEventListener("click", (e) => {
@@ -96,7 +96,7 @@ function removeColor(item){
     }
 
     item.addEventListener("mouseover", applyColor)
-    item.addEventListener("touchmove", applyColor)
+    item.addEventListener("touchstart", applyColor)
 }
 
 eraser.addEventListener("click", (e) => {
