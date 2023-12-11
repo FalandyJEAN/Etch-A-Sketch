@@ -7,16 +7,25 @@
 :root{
     --primary-color :white;
     --item-border-color :rgba(183, 182, 182, 0.768);
-    --container-border-color :red;
-    --item-hover-background-color :black
+    --border-color :red;
+    --item-hover-background-color :black;
 }
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-image: linear-gradient(black,gray);
+}
+
+.header{
+    color: var(--border-color);
+    font-weight: bold;
+    font-style: oblique;
+    font-family:fantasy;
+    margin-bottom: 30px;
 }
 
 .container{
@@ -26,17 +35,74 @@ body{
     max-width: 500px;
     border-radius: 10px;
     background-color:var(--primary-color);
-    border: 10px solid var(--container-border-color);
+    border: 10px solid var(--border-color);
 }
 
 .gridItem{
-    flex: 1 0 calc((95% / 16));
+    flex: 1 0 calc((100% / var(--grid-size)));
     height: 0;
-    padding-bottom: calc((95% / 16));
+    padding-bottom: calc((100% / var(--grid-size)));
     transition: background-color 0.3s ease;
     /*border: 1px solid var(--item-border-color);*/
 }
 
 .gridItem:hover{
     background-color:var(--item-hover-background-color);
+}
+
+
+
+/*settings*/
+.settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 40px;
+    padding: 30px;
+    gap: 10px;
+}
+
+.btn{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: bolder;
+    background-color:var(--primary-color);
+    border:2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn::after{
+    background-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+#rainbowBtn{
+    background-image: url("/rainbownBtn.jpg");
+    background-size: contain;
+}
+
+.rangeSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bolder;
+}
+
+#size{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width : 500px) {
+    .rangeSection{
+        width: 100%;
+    }
 }

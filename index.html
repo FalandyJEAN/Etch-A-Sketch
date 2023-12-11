@@ -9,8 +9,21 @@
         <title>ETCH-A-SKETCH</title>
     </head>
     <body>
+        <h1 class="header">ETCH-A-SKETCH</h1>
+
         <div class="container">
             <!--Notre grille aparaitra par ici-->
+        </div>
+
+        <div class="settings">
+            <input type="color" id="colorPicker" value="black" class="btn">
+            <div type="input" id="rainbowBtn" class="btn">Rainbow</div>
+            <div class="rangeSection">
+                <label for="range" id="rangeValue">16 x 16</label>
+                <input type="range" name="range" min="1" max="100" id="size">
+            </div>
+            <div id="erase" class="btn">Erase</div>
+            <div id="clear" class="btn">Clear</div>
         </div>
     </body>
 </html>
