@@ -40,7 +40,7 @@ function addBlackColor(item) {
 
     item.addEventListener("mouseover", applyColor)
     item.addEventListener("touchstart", applyColor)
-    item.addEventListener("touchend", applyColor)
+    item.addEventListener("touchmove", applyColor)
 }
 
 colorPicker.addEventListener("input", (e) => {
@@ -55,7 +55,7 @@ colorPicker.addEventListener("input", (e) => {
 
         item.addEventListener("mouseover", applyColor)
         item.addEventListener("touchstart", applyColor)
-        item.addEventListener("touchend", applyColor)
+        item.addEventListener("touchmove", applyColor)
     })
 })
 
@@ -81,7 +81,7 @@ function applyRandomColor(item){
 
     item.addEventListener("mouseover", applyColor)
     item.addEventListener("touchstart", applyColor)
-    item.addEventListener("touchend", applyColor)
+    item.addEventListener("touchmove", applyColor)
 }
 
 rainbowBtn.addEventListener("click", (e) => {
@@ -100,7 +100,7 @@ function removeColor(item){
 
     item.addEventListener("mouseover", applyColor)
     item.addEventListener("touchstart", applyColor)
-    item.addEventListener("touchend", applyColor)
+    item.addEventListener("touchmove", applyColor)
 }
 
 eraser.addEventListener("click", (e) => {
