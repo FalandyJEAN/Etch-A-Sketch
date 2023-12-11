@@ -32,11 +32,15 @@ function createGrid() {
     }
 }
 
-function addBlackColor(item){
-    item.addEventListener("mouseover", (e) => {
+function addBlackColor(item) {
+    const applyColor = (e) => {
         e.preventDefault()
         item.style.backgroundColor = "black"
-    })
+    }
+
+    item.addEventListener("mouseover", applyColor)
+    item.addEventListener("touchstart", applyColor)
+    item.addEventListener("touchmove", applyColor)
 }
 
 colorPicker.addEventListener("input", (e) => {
@@ -44,10 +48,14 @@ colorPicker.addEventListener("input", (e) => {
     const gridItems = document.querySelectorAll(".gridItem")
 
     gridItems.forEach((item) => {
-        item.addEventListener("mouseover", (e) => {
+        const applyColor = (e) => {
             e.preventDefault()
             item.style.backgroundColor = selectedColor
-        })
+        }
+
+        item.addEventListener("mouseover", applyColor)
+        item.addEventListener("touchstart", applyColor)
+        item.addEventListener("touchmove", applyColor)
     })
 })
 
@@ -65,12 +73,15 @@ function getRandomColor(){
 
 function applyRandomColor(item){
     const randomColor = getRandomColor()
-    //rainbowBtn.style.backgroundColor = "red"
 
-    item.addEventListener("mouseover", (e) => {
+    const applyColor = (e) => {
         e.preventDefault()
         item.style.backgroundColor = randomColor
-    })
+    }
+
+    item.addEventListener("mouseover", applyColor)
+    item.addEventListener("touchstart", applyColor)
+    item.addEventListener("touchmove", applyColor)
 }
 
 rainbowBtn.addEventListener("click", (e) => {
@@ -82,10 +93,14 @@ rainbowBtn.addEventListener("click", (e) => {
 })
 
 function removeColor(item){
-    item.addEventListener("mouseover", (e) => {
+    const applyColor =  (e) => {
         e.preventDefault()
         item.style.backgroundColor = "white"
-    })
+    }
+
+    item.addEventListener("mouseover", applyColor)
+    item.addEventListener("touchstart", applyColor)
+    item.addEventListener("touchmove", applyColor)
 }
 
 eraser.addEventListener("click", (e) => {

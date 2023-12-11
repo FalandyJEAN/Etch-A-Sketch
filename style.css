@@ -43,7 +43,7 @@ body{
     height: 0;
     padding-bottom: calc((100% / var(--grid-size)));
     transition: background-color 0.3s ease;
-    border: 1px solid var(--item-border-color);
+    /*border: 0.1px solid var(--item-border-color);*/
 }
 
 .gridItem:hover{
