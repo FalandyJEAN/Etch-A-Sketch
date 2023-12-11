@@ -83,7 +83,7 @@ body{
 }
 
 #rainbowBtn{
-    background-image: url("/rainbownBtn.jpg");
+    background-image: url("../rainbownBtn.jpg");
     background-size: contain;
 }
 
